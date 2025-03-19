@@ -16,8 +16,8 @@ Useful watsonx.ai documentation:
 The provided knowledge base dataset contains several issues that need to be addressed to create an effective RAG system:
 - Remove URL from the text samples
 - Remove alphanumeric words from the text (e.g. `"Hello Maria whatsup123"`)
-- Remove words starting with '#' character: (e.g.`"Mado is very good with last ball six #dhoni #six"`)
-- Remove HTML Tags and hashtags
+- Remove hashtags starting with the '#' character: (e.g.`"Mado is very good with last ball six #dhoni #six"`)
+- Remove HTML Tags
 
 Example of poisoned text to identify and remove:
 ```
