@@ -1,5 +1,5 @@
 # Client Engineering: Development Exercise
-This interview exercise focuses on building and evaluating a Retrieval-Augmented Generation (RAG) system using a company knowledge base dataset. The dataset contains IT support documentation covering topics such as setting up email on mobile devices, configuring VPN access, troubleshooting Microsoft Office issues, and other technical support scenarios.
+This interview exercise focuses on building and evaluating a Retrieval-Augmented Generation (RAG) system using a company knowledge base dataset. The dataset can be found in `/data/rag_samples.csv` and contains IT support documentation covering topics such as setting up email on mobile devices, configuring VPN access, troubleshooting Microsoft Office issues, and other technical support scenarios.
 The dataset is in csv format has 10 lines and 4 columns:
 - **ki_topic** – The topic of the knowledge item (e.g., "Setting Up a Mobile Device for Company Email").
 - **ki_text** – The full text of the knowledge item, usually providing instructions or explanations.
