@@ -1,10 +1,11 @@
 # Client Engineering: Development Exercise
 This interview exercise focuses on building and evaluating a Retrieval-Augmented Generation (RAG) system using a company knowledge base dataset. The dataset can be found in `/data/rag_samples.csv` and contains IT support documentation covering topics such as setting up email on mobile devices, configuring VPN access, troubleshooting Microsoft Office issues, and other technical support scenarios.
-The dataset is in csv format has 10 lines and 4 columns:
+The dataset is in csv format has 10 lines and 5 columns:
 - **ki_topic** – The topic of the knowledge item (e.g., "Setting Up a Mobile Device for Company Email").
 - **ki_text** – The full text of the knowledge item, usually providing instructions or explanations.
 - **sample_question** – A sample user question related to the topic (e.g., "How do I set up my company email on my mobile?").
 - **sample_ground_truth** – The expected response or answer to the sample question, often a concise summary or guidance.
+- **sample_answer** – A response generated using AI, to be validated in exercise 4.
 
 You can use the AI models and provider that you are most confortable with or IBM watsonx.ai models (credentials are provided via e-mail).
 
@@ -36,11 +37,20 @@ Using the cleaned dataset, develop a simple RAG system that can effectively:
 
 Provide your implementation and explain your design choices.
 
+
 ## Exercise 3 - Agent Development
-Enhance your RAG system by implementing an agent-based approach. You can use the framework you prefer (Crew.ai, Langgraph, Langflow)
+Develop an agent-based system for internet research and hallucination detection. The system should:
+
+- Retrieve information from online sources.
+- Verify reliability to reduce hallucinations.
+- Provide a structured, sourced response.
+
+Use any framework you prefer (Crew.ai, Langgraph, Langflow) to orchestrate the agent’s workflow. 
+
 
 ## Exercise 4 - Performance Evaluation
 In the dataset you can find the golden response to the sample question. Evaluate the performance of your RAG system using:
 - **ROUGE** scores comparing your system's responses to the sample ground truth answers provided
 - **BLEU** scores for measuring text generation quality
 - A custom relevance metric that assesses how well your system's responses address the specific user questions
+You can use the output from exercise 2 or the values in the column sample_answer.
