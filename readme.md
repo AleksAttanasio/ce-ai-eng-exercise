@@ -47,7 +47,7 @@ The dataset is in csv format has 10 lines and 5 columns:
 - **ki_text** – The full text of the knowledge item, usually providing instructions or explanations.
 - **sample_question** – A sample user question related to the topic (e.g., "How do I set up my company email on my mobile?").
 - **sample_ground_truth** – The expected response or answer to the sample question, often a concise summary or guidance.
-- **sample_answer** – A response generated using AI, to be validated in exercise 4.
+- **sample_answer** – A response generated using AI, which could be used to validate the output.
 
 ---
 
